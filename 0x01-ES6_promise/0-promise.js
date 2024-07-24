@@ -7,5 +7,5 @@ function getResponseFromAPI() {
     } else {
       reject();
     }
-  }
+  });
 }
