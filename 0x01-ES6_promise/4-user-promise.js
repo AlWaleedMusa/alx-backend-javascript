@@ -2,6 +2,10 @@
 
 export default function signUpUser(firstName, lastName) {
   return new Promise((resolve, reject) => {
-    resolve({ firstName, lastName });
+    if (firstName && lastName) {
+      resolve({ firstName, lastName });
+    } else {
+      reject("did not work")
+    }
   });
 }
