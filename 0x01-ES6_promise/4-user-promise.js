@@ -5,7 +5,7 @@ export default function signUpUser(firstName, lastName) {
     if (firstName && lastName) {
       resolve({ firstName, lastName });
     } else {
-      reject("did not work")
+      reject(new Error());
     }
   });
 }
