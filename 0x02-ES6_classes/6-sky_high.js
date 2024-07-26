@@ -28,12 +28,8 @@ export default class SkyHighBuilding extends Building {
   /**
    * Set the number of floors in the building.
    * @param {number} value - The number of floors.
-   * @throws {TypeError} Throws an error if the value is not a number.
    */
   set floors(value) {
-    if (typeof value !== 'number') {
-      throw new TypeError('Floors must be a number');
-    }
     this._floors = value;
   }
 
@@ -42,6 +38,6 @@ export default class SkyHighBuilding extends Building {
    * @returns {string} The evacuation warning message.
    */
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this.floors} floors.`;
+    return `Evacuate slowly the ${this.floors} floors`;
   }
 }
