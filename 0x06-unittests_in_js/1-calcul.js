@@ -3,10 +3,10 @@ function calculateNumber(type, a, b) {
         return Math.round(a) + Math.round(b);
     }
     if (type === "SUBTRACT") {
-        return Math.round(b) - Math.round(a);
+        return Math.round(a) - Math.round(b);
     }
     if (type === "DIVIDE") {
-        return Math.round(b) === 0 ? "Error" : Math.round(a) / Math.round(b)
+        return Math.round(b) === 0 ? "Error" : Math.round(a) / Math.round(b);
     }
     return 0
 }
